@@ -4,9 +4,9 @@ import fs from 'fs';
 import pdf from 'pdf-parse';
 import mammoth from 'mammoth';
 
-export const dynamicParams = true; // New way to configure the route
+// You can remove export const config and apply dynamicParams as shown below
+export const dynamicParams = true; // Configure dynamic params or use 'dynamic'
 
-// Helper function for parsing form data
 const readFile = (req) =>
   new Promise((resolve, reject) => {
     const form = new formidable.IncomingForm();
